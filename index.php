@@ -1,5 +1,15 @@
+<!DOCTYPE html>
 <html style="background: #fff url('-no-background-.png');padding: 1%;">
-<style>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Textures : Textures for website background" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Textures</title>
+    <style>
 [type="color"] {
   width: 30px;
   padding: 0;
@@ -16,10 +26,28 @@ label {
   text-align: right;
 }
 </style>
+  </head>
 
-<div id="html" style="height:90%;width:90%;background-color: white">
-  <div id="body" style="height:90%;width:90%;background-color: transparent; margin-top:5%;margin-left:5%;position:absolute">
-  
+  <body id="html" style="background-color: white; background-image: none;">
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/iegik/textures">View on GitHub</a>
+
+          <h1 id="project_title">Textures</h1>
+          <h2 id="project_tagline">Textures for website background</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/iegik/textures/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/iegik/textures/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="body" style="height:90%;width:90%;background-color: transparent; margin-top:5%;margin-left:5%;" class="outer">
+      <section id="main_content" class="inner">  
   <form style="margin:0 auto;width:360px; background-color: rgba(128,128,128,.5)">
     <fieldset>
       <legend>Html</legend>
@@ -82,7 +110,7 @@ label {
       </p>  
       <p>
         <label for="color">background-color:</label>
-        <input id="body-background-color" onchange="(function(d,s){d.getElementById('body').style.backgroundColor=s;console.log('background-color: '+s+';')})(document,this.value)" placeholder="transparent" value="transparent"/>
+        <input id="body-background-color" onchange="(function(d,s){d.getElementById('body').style.backgroundColor=s;console.log('background-color: '+s+';')})(document,this.value)" placeholder="transparent" value="inherit"/>
         <input type="color" onchange="(function(d,s){d.getElementById('body').style.backgroundColor=s;d.getElementById('body-background-color').value=s;console.log('background-color: '+s+';')})(document,this.value)"/>
       </p>
       <p>
@@ -95,6 +123,18 @@ label {
       </p>
     </fieldset>
   </form>
-  </div>
-</div>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Textures maintained by <a href="https://github.com/iegik">iegik</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
 </html>
