@@ -1,4 +1,13 @@
+<!DOCTYPE html>
 <html style="background: #fff url('-no-background-.png');padding: 1%;">
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Textures : Textures for website background" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Textures</title>
 <style>
 [type="color"] {
   width: 30px;
@@ -16,10 +25,28 @@ label {
   text-align: right;
 }
 </style>
+  </head>
 
-<div id="html" style="height:90%;width:90%;background-color: white">
-  <div id="body" style="height:90%;width:90%;background-color: transparent; margin-top:5%;margin-left:5%;position:absolute">
+  <body id="html" style="background-color: white; background-image: none;">
   
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/iegik/textures">View on GitHub</a>
+
+          <h1 id="project_title">Textures</h1>
+          <h2 id="project_tagline">Textures for website background</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/iegik/textures/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/iegik/textures/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="body" style="height:90%;width:90%;background-color: transparent; margin-top:5%;margin-left:5%;" class="outer">
+      <section id="main_content" class="inner">  
   <form style="margin:0 auto;width:360px; background-color: rgba(128,128,128,.5)">
     <fieldset>
       <legend>Html</legend>
@@ -32,15 +59,10 @@ label {
         <label for="background-image">background-image:</label>
         <select id="background-image" onchange="(function(d,s){d.getElementById('html').style.backgroundImage='url(\''+s+'\')';console.log('background-image: url(\''+s+'\');')})(document,this.value)">
           <option value="none">none</option>
-<<<<<<< master:index.php
         <?php foreach (scandir(dirname(__FILE__)) as $f){
           if(preg_match('/(jpg|png|gif)/',$f))
             printf('<option value="%s">%s</option>',$f,substr($f,0,-4));
         }?>
-        </select>
-=======
-        <option value="-no-background-.png">-no-background-</option><option value="-no-background-1.png">-no-background-1</option><option value="-no-background-1.png.b64">-no-background-1.png</option><option value="01.png">01</option><option value="1cm.png">1cm</option><option value="8x6gray.png">8x6gray</option><option value="March2011-Wallpaper-LRG.jpg">March2011-Wallpaper-LRG</option><option value="Pink Plarform.gif">Pink Plarform</option><option value="Sexy_Blond_by_m4riOS-32x18x32.gif">Sexy_Blond_by_m4riOS-32x18x32</option><option value="Sexy_Blond_by_m4riOS_128.gif">Sexy_Blond_by_m4riOS_128</option><option value="always_grey.png">always_grey</option><option value="carbon_fibre_v2.png">carbon_fibre_v2</option><option value="carbone.png">carbone</option><option value="diod.png">diod</option><option value="footer_bg_repeat_top_trans.png">footer_bg_repeat_top_trans</option><option value="illico.png">illico</option><option value="innerpage_background_image.png">innerpage_background_image</option><option value="leafs-b.png">leafs-b</option><option value="leafs-gs.png">leafs-gs</option><option value="leafs-w.png">leafs-w</option><option value="leafs-w.png.b64">leafs-w.png</option><option value="light-corner-t.png">light-corner-t</option><option value="light-corner-tr.png">light-corner-tr</option><option value="lined_paper.png">lined_paper</option><option value="lined_paper.png.b64">lined_paper.png</option><option value="lined_paper_2X.png">lined_paper_2X</option><option value="lined_paper_2X.png.b64">lined_paper_2X.png</option><option value="none.gif">none</option><option value="path3017.png">path3017</option><option value="path3017.png.b64">path3017.png</option><option value="path3021.png">path3021</option><option value="path3021.png.b64">path3021.png</option><option value="roses.png">roses</option><option value="smfng8x6-tr.png">smfng8x6-tr</option><option value="starmat.png">starmat</option><option value="tr.gif">tr</option>        </select>
->>>>>>> local:index.html
         <input type="color" onchange="(function(d,s){d.getElementById('html').style.backgroundImage='-webkit-gradient(linear,0 0,0 100%,from('+d.getElementById('html-background-color').value+'),to('+s+'))';console.log(d.getElementById('html').style,'background-image: -webkit-gradient(linear,0 0,0 100%,from('+d.getElementById('html-background-color').value+'),to('+s+'));')})(document,this.value)"/>
       </p>
       <p>
@@ -68,15 +90,11 @@ label {
         <label for="background-image">background-image:</label>
         <select id="background-image" onchange="(function(d,s){d.getElementById('body').style.backgroundImage='url('+s+')';console.log('background-image: url(\''+s+'\');')})(document,this.value)">
           <option value="none">none</option>
-<<<<<<< master:index.php
         <?php foreach (scandir(dirname(__FILE__)) as $f){
           if(preg_match('/(jpg|png|gif)/',$f))
             printf('<option value="%s">%s</option>',$f,substr($f,0,-4));
         }?>
         </select>
-=======
-        <option value="-no-background-.png">-no-background-</option><option value="-no-background-1.png">-no-background-1</option><option value="-no-background-1.png.b64">-no-background-1.png</option><option value="01.png">01</option><option value="1cm.png">1cm</option><option value="8x6gray.png">8x6gray</option><option value="March2011-Wallpaper-LRG.jpg">March2011-Wallpaper-LRG</option><option value="Pink Plarform.gif">Pink Plarform</option><option value="Sexy_Blond_by_m4riOS-32x18x32.gif">Sexy_Blond_by_m4riOS-32x18x32</option><option value="Sexy_Blond_by_m4riOS_128.gif">Sexy_Blond_by_m4riOS_128</option><option value="always_grey.png">always_grey</option><option value="carbon_fibre_v2.png">carbon_fibre_v2</option><option value="carbone.png">carbone</option><option value="diod.png">diod</option><option value="footer_bg_repeat_top_trans.png">footer_bg_repeat_top_trans</option><option value="illico.png">illico</option><option value="innerpage_background_image.png">innerpage_background_image</option><option value="leafs-b.png">leafs-b</option><option value="leafs-gs.png">leafs-gs</option><option value="leafs-w.png">leafs-w</option><option value="leafs-w.png.b64">leafs-w.png</option><option value="light-corner-t.png">light-corner-t</option><option value="light-corner-tr.png">light-corner-tr</option><option value="lined_paper.png">lined_paper</option><option value="lined_paper.png.b64">lined_paper.png</option><option value="lined_paper_2X.png">lined_paper_2X</option><option value="lined_paper_2X.png.b64">lined_paper_2X.png</option><option value="none.gif">none</option><option value="path3017.png">path3017</option><option value="path3017.png.b64">path3017.png</option><option value="path3021.png">path3021</option><option value="path3021.png.b64">path3021.png</option><option value="roses.png">roses</option><option value="smfng8x6-tr.png">smfng8x6-tr</option><option value="starmat.png">starmat</option><option value="tr.gif">tr</option>        </select>
->>>>>>> local:index.html
         <input type="color" onchange="(function(d,s){d.getElementById('body').style.backgroundImage='-webkit-gradient(linear,0 0,0 100%,from('+d.getElementById('body-background-color').value+'),to('+s+'))';console.log(d.getElementById('body').style,'background-image: -webkit-gradient(linear,0 0,0 100%,from('+d.getElementById('body-background-color').value+'),to('+s+'));')})(document,this.value)"/>
       </p>
       <p>
@@ -103,6 +121,14 @@ label {
       </p>
     </fieldset>
   </form>
+      </section>
   </div>
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Textures maintained by <a href="https://github.com/iegik">iegik</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
 </div>
+  </body>
 </html>
