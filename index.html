@@ -1,14 +1,33 @@
 <!DOCTYPE html>
-<html style="background: #fff url('-no-background-.png');padding: 1%;">
+<html>
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="Textures : Textures for website background" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
     <title>Textures</title>
 <style>
+html {
+	background-color: #555;
+	background-image:
+		linear-gradient(45deg, #999 25%, transparent 25%, transparent 75%, #999 75%, #999), 
+		linear-gradient(45deg, #999 25%, transparent 25%, transparent 75%, #999 75%, #999);
+	background-size: 20px 20px;
+	background-position: 0 0, 30px 30px;
+	padding: 1%;
+}
+#html {
+	background-color: white; 
+	background-image: none;
+}
+#body {
+	height: 90%;
+	width: 90%;
+	background-color: transparent; 
+	margin-top: 5%;
+	margin-left: 5%;
+}
 [type="color"] {
   width: 30px;
   padding: 0;
@@ -27,7 +46,7 @@ label {
 </style>
   </head>
 
-  <body id="html" style="background-color: white; background-image: none;">
+  <body id="html">
   
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
@@ -45,7 +64,7 @@ label {
     </div>
 
     <!-- MAIN CONTENT -->
-    <div id="body" style="height:90%;width:90%;background-color: transparent; margin-top:5%;margin-left:5%;" class="outer">
+    <div id="body" class="outer">
       <section id="main_content" class="inner">  
   <form style="margin:0 auto;width:360px; background-color: rgba(128,128,128,.5)">
     <fieldset>
@@ -122,5 +141,6 @@ label {
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
 </div>
+	<script src="https://raw.github.com/LeaVerou/prefixfree/gh-pages/prefixfree.min.js"></script>
   </body>
 </html>
