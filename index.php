@@ -150,5 +150,6 @@ label {
       </footer>
 </div>
 	<script src="https://raw.github.com/LeaVerou/prefixfree/gh-pages/prefixfree.min.js"></script>
+	<script src="https://gist.github.com/raw/4706804/drag2background.js"></script>
   </body>
 </html>
