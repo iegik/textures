@@ -11,20 +11,20 @@
 html {
 	background-color: #555;
 	background-image:
-		linear-gradient(45deg, #999 25%, transparent 25%, transparent 75%, #999 75%, #999), 
+		linear-gradient(45deg, #999 25%, transparent 25%, transparent 75%, #999 75%, #999),
 		linear-gradient(45deg, #999 25%, transparent 25%, transparent 75%, #999 75%, #999);
 	background-size: 20px 20px;
 	background-position: 0 0, 30px 30px;
 	padding: 1%;
 }
 #html {
-	background-color: white; 
+	background-color: white;
 	background-image: none;
 }
 #body {
 	height: 90%;
 	width: 90%;
-	background-color: transparent; 
+	background-color: transparent;
 	margin-top: 5%;
 	margin-left: 5%;
 }
@@ -47,7 +47,7 @@ label {
   </head>
 
   <body id="html">
-  
+
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
@@ -65,7 +65,7 @@ label {
 
     <!-- MAIN CONTENT -->
     <div id="body" class="outer">
-      <section id="main_content" class="inner">  
+      <section id="main_content" class="inner">
   <form style="margin:0 auto;width:360px; background-color: rgba(128,128,128,.5)">
     <fieldset>
       <legend>Html</legend>
@@ -92,7 +92,7 @@ label {
           <option value="repeat-y">repeat-y</option>
           <option value="no-repeat">no-repeat</option>
         </select>
-      </p>  
+      </p>
       <p>
         <label for="background-position">background-position:</label>
         <input id="background-position" onchange="(function(d,s){d.getElementById('html').style.backgroundPosition=s;console.log(d.getElementById('html').style,'background-position: '+s+';')})(document,this.value)" placeholder="50% 50%"/>
@@ -102,7 +102,7 @@ label {
         <input id="background-size" onchange="(function(d,s){d.getElementById('html').style.backgroundSize=s;console.log('background-size: '+s+';')})(document,this.checked?'100%':'auto')" type="checkbox"/>
       </p>
     </fieldset>
-    
+
     <fieldset>
       <legend>Body</legend>
       <p>
@@ -124,7 +124,7 @@ label {
           <option value="repeat-y">repeat-y</option>
           <option value="no-repeat">no-repeat</option>
         </select>
-      </p>  
+      </p>
       <p>
         <label for="color">background-color:</label>
         <input id="body-background-color" onchange="(function(d,s){d.getElementById('body').style.backgroundColor=s;console.log('background-color: '+s+';')})(document,this.value)" placeholder="transparent" value="transparent"/>
@@ -150,6 +150,6 @@ label {
       </footer>
 </div>
 	<script src="https://raw.github.com/LeaVerou/prefixfree/gh-pages/prefixfree.min.js"></script>
-	<script src="https://gist.github.com/raw/4706804/drag2background.js"></script>
+	<script src="https://gist.github.com/raw/4706804/dropimage.js"></script>
   </body>
 </html>
