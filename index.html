@@ -11,20 +11,20 @@
 html {
 	background-color: #555;
 	background-image:
-		linear-gradient(45deg, #999 25%, transparent 25%, transparent 75%, #999 75%, #999), 
+		linear-gradient(45deg, #999 25%, transparent 25%, transparent 75%, #999 75%, #999),
 		linear-gradient(45deg, #999 25%, transparent 25%, transparent 75%, #999 75%, #999);
 	background-size: 20px 20px;
 	background-position: 0 0, 30px 30px;
 	padding: 1%;
 }
 #html {
-	background-color: white; 
+	background-color: white;
 	background-image: none;
 }
 #body {
 	height: 90%;
 	width: 90%;
-	background-color: transparent; 
+	background-color: transparent;
 	margin-top: 5%;
 	margin-left: 5%;
 }
@@ -47,7 +47,7 @@ label {
   </head>
 
   <body id="html">
-  
+
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
@@ -65,7 +65,7 @@ label {
 
     <!-- MAIN CONTENT -->
     <div id="body" class="outer">
-      <section id="main_content" class="inner">  
+      <section id="main_content" class="inner">
   <form style="margin:0 auto;width:360px; background-color: rgba(128,128,128,.5)">
     <fieldset>
       <legend>Html</legend>
@@ -78,7 +78,7 @@ label {
         <label for="background-image">background-image:</label>
         <select id="background-image" onchange="(function(d,s){d.getElementById('html').style.backgroundImage='url(\''+s+'\')';console.log('background-image: url(\''+s+'\');')})(document,this.value)">
           <option value="none">none</option>
-        <option value="-no-background-.png">-no-background-</option><option value="-no-background-1.png">-no-background-1</option><option value="-no-background-1.png.b64">-no-background-1.png</option><option value="01.png">01</option><option value="1cm.png">1cm</option><option value="8x6gray.png">8x6gray</option><option value="March2011-Wallpaper-LRG.jpg">March2011-Wallpaper-LRG</option><option value="Pink Plarform.gif">Pink Plarform</option><option value="Sexy_Blond_by_m4riOS-32x18x32.gif">Sexy_Blond_by_m4riOS-32x18x32</option><option value="Sexy_Blond_by_m4riOS_128.gif">Sexy_Blond_by_m4riOS_128</option><option value="always_grey.png">always_grey</option><option value="bg2100001.png">bg2100001</option><option value="carbon_fibre_v2.png">carbon_fibre_v2</option><option value="carbone.png">carbone</option><option value="circles.png">circles</option><option value="diod.png">diod</option><option value="footer_bg_repeat_top_trans.png">footer_bg_repeat_top_trans</option><option value="illico.png">illico</option><option value="innerpage_background_image.png">innerpage_background_image</option><option value="leafs-b.png">leafs-b</option><option value="leafs-gs.png">leafs-gs</option><option value="leafs-w.png">leafs-w</option><option value="leafs-w.png.b64">leafs-w.png</option><option value="light-corner-t.png">light-corner-t</option><option value="light-corner-tr.png">light-corner-tr</option><option value="lined_paper.png">lined_paper</option><option value="lined_paper.png.b64">lined_paper.png</option><option value="lined_paper_2X.png">lined_paper_2X</option><option value="lined_paper_2X.png.b64">lined_paper_2X.png</option><option value="none.gif">none</option><option value="path3017.png">path3017</option><option value="path3017.png.b64">path3017.png</option><option value="path3021.png">path3021</option><option value="path3021.png.b64">path3021.png</option><option value="roses.png">roses</option><option value="smfng8x6-tr.png">smfng8x6-tr</option><option value="starmat.png">starmat</option><option value="tr.gif">tr</option>        <input type="color" onchange="(function(d,s){d.getElementById('html').style.backgroundImage='-webkit-gradient(linear,0 0,0 100%,from('+d.getElementById('html-background-color').value+'),to('+s+'))';console.log(d.getElementById('html').style,'background-image: -webkit-gradient(linear,0 0,0 100%,from('+d.getElementById('html-background-color').value+'),to('+s+'));')})(document,this.value)"/>
+        <option value="always_grey.png">always_grey</option><option value="carbone.png">carbone</option><option value="carbon_fibre_v2.png">carbon_fibre_v2</option><option value="diod.png">diod</option><option value="illico.png">illico</option><option value="leafs-b.png">leafs-b</option><option value="leafs-gs.png">leafs-gs</option><option value="leafs-w.png">leafs-w</option><option value="light-corner-t.png">light-corner-t</option><option value="light-corner-tr.png">light-corner-tr</option><option value="roses.png">roses</option><option value="smfng8x6-tr.png">smfng8x6-tr</option><option value="starmat.png">starmat</option>        <input type="color" onchange="(function(d,s){d.getElementById('html').style.backgroundImage='-webkit-gradient(linear,0 0,0 100%,from('+d.getElementById('html-background-color').value+'),to('+s+'))';console.log(d.getElementById('html').style,'background-image: -webkit-gradient(linear,0 0,0 100%,from('+d.getElementById('html-background-color').value+'),to('+s+'));')})(document,this.value)"/>
       </p>
       <p>
         <label for="background-repeat">background-repeat:</label>
@@ -88,7 +88,7 @@ label {
           <option value="repeat-y">repeat-y</option>
           <option value="no-repeat">no-repeat</option>
         </select>
-      </p>  
+      </p>
       <p>
         <label for="background-position">background-position:</label>
         <input id="background-position" onchange="(function(d,s){d.getElementById('html').style.backgroundPosition=s;console.log(d.getElementById('html').style,'background-position: '+s+';')})(document,this.value)" placeholder="50% 50%"/>
@@ -98,14 +98,14 @@ label {
         <input id="background-size" onchange="(function(d,s){d.getElementById('html').style.backgroundSize=s;console.log('background-size: '+s+';')})(document,this.checked?'100%':'auto')" type="checkbox"/>
       </p>
     </fieldset>
-    
+
     <fieldset>
       <legend>Body</legend>
       <p>
         <label for="background-image">background-image:</label>
         <select id="background-image" onchange="(function(d,s){d.getElementById('body').style.backgroundImage='url('+s+')';console.log('background-image: url(\''+s+'\');')})(document,this.value)">
           <option value="none">none</option>
-        <option value="-no-background-.png">-no-background-</option><option value="-no-background-1.png">-no-background-1</option><option value="-no-background-1.png.b64">-no-background-1.png</option><option value="01.png">01</option><option value="1cm.png">1cm</option><option value="8x6gray.png">8x6gray</option><option value="March2011-Wallpaper-LRG.jpg">March2011-Wallpaper-LRG</option><option value="Pink Plarform.gif">Pink Plarform</option><option value="Sexy_Blond_by_m4riOS-32x18x32.gif">Sexy_Blond_by_m4riOS-32x18x32</option><option value="Sexy_Blond_by_m4riOS_128.gif">Sexy_Blond_by_m4riOS_128</option><option value="always_grey.png">always_grey</option><option value="bg2100001.png">bg2100001</option><option value="carbon_fibre_v2.png">carbon_fibre_v2</option><option value="carbone.png">carbone</option><option value="circles.png">circles</option><option value="diod.png">diod</option><option value="footer_bg_repeat_top_trans.png">footer_bg_repeat_top_trans</option><option value="illico.png">illico</option><option value="innerpage_background_image.png">innerpage_background_image</option><option value="leafs-b.png">leafs-b</option><option value="leafs-gs.png">leafs-gs</option><option value="leafs-w.png">leafs-w</option><option value="leafs-w.png.b64">leafs-w.png</option><option value="light-corner-t.png">light-corner-t</option><option value="light-corner-tr.png">light-corner-tr</option><option value="lined_paper.png">lined_paper</option><option value="lined_paper.png.b64">lined_paper.png</option><option value="lined_paper_2X.png">lined_paper_2X</option><option value="lined_paper_2X.png.b64">lined_paper_2X.png</option><option value="none.gif">none</option><option value="path3017.png">path3017</option><option value="path3017.png.b64">path3017.png</option><option value="path3021.png">path3021</option><option value="path3021.png.b64">path3021.png</option><option value="roses.png">roses</option><option value="smfng8x6-tr.png">smfng8x6-tr</option><option value="starmat.png">starmat</option><option value="tr.gif">tr</option>        </select>
+        <option value="always_grey.png">always_grey</option><option value="carbone.png">carbone</option><option value="carbon_fibre_v2.png">carbon_fibre_v2</option><option value="diod.png">diod</option><option value="illico.png">illico</option><option value="leafs-b.png">leafs-b</option><option value="leafs-gs.png">leafs-gs</option><option value="leafs-w.png">leafs-w</option><option value="light-corner-t.png">light-corner-t</option><option value="light-corner-tr.png">light-corner-tr</option><option value="roses.png">roses</option><option value="smfng8x6-tr.png">smfng8x6-tr</option><option value="starmat.png">starmat</option>        </select>
         <input type="color" onchange="(function(d,s){d.getElementById('body').style.backgroundImage='-webkit-gradient(linear,0 0,0 100%,from('+d.getElementById('body-background-color').value+'),to('+s+'))';console.log(d.getElementById('body').style,'background-image: -webkit-gradient(linear,0 0,0 100%,from('+d.getElementById('body-background-color').value+'),to('+s+'));')})(document,this.value)"/>
       </p>
       <p>
@@ -116,7 +116,7 @@ label {
           <option value="repeat-y">repeat-y</option>
           <option value="no-repeat">no-repeat</option>
         </select>
-      </p>  
+      </p>
       <p>
         <label for="color">background-color:</label>
         <input id="body-background-color" onchange="(function(d,s){d.getElementById('body').style.backgroundColor=s;console.log('background-color: '+s+';')})(document,this.value)" placeholder="transparent" value="transparent"/>
@@ -142,6 +142,6 @@ label {
       </footer>
 </div>
 	<script src="https://raw.github.com/LeaVerou/prefixfree/gh-pages/prefixfree.min.js"></script>
-	<script src="https://gist.github.com/raw/4706804/drag2background.js"></script>
+	<script src="https://gist.github.com/raw/4706804/dropimage.js"></script>
   </body>
 </html>
